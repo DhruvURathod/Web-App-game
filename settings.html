@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container settings-container">
+        <h1>Settings</h1>
+        <div class="settings-controls">
+            <div class="setting-group">
+                <h2>Snake Speed</h2>
+                <div class="speed-buttons">
+                    <button class="speed-btn" data-speed="150">Slow</button>
+                    <button class="speed-btn active" data-speed="100">Medium</button>
+                    <button class="speed-btn" data-speed="50">Fast</button>
+                </div>
+            </div>
+            <div class="setting-group">
+                <h2>Wall Collision</h2>
+                <div class="toggle-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="wallCollision" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span id="wallStatus">Enabled</span>
+                </div>
+            </div>
+            <div class="setting-group">
+                <h2>Snake Skin</h2>
+                <div class="skin-buttons">
+                    <button class="skin-btn active" data-skin="green">Classic Green</button>
+                    <button class="skin-btn" data-skin="blue">Ocean Blue</button>
+                    <button class="skin-btn" data-skin="purple">Royal Purple</button>
+                    <button class="skin-btn" data-skin="orange">Fiery Orange</button>
+                </div>
+            </div>
+            <div class="setting-group">
+                <h2>Food Skin</h2>
+                <div class="food-buttons">
+                    <button class="food-btn active" data-food="apple">🍎 Apple</button>
+                    <button class="food-btn" data-food="orange">🍊 Orange</button>
+                    <button class="food-btn" data-food="grape">🍇 Grape</button>
+                    <button class="food-btn" data-food="cherry">🍒 Cherry</button>
+                    <button class="food-btn" data-food="strawberry">🍓 Strawberry</button>
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="nav-button">Back to Home</a>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>
